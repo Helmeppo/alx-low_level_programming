@@ -40,7 +40,7 @@ words[len] = NULL;
 return (words);
 }
 /*
- *util - a util function for fetching words into an array
+ * util - a util function for fetching words into an array
  * @words: the strings array
  * @str: the string
  */
