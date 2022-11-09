@@ -23,7 +23,7 @@ if (flag == 0 && str[i] != ' ')
 flag = 1;
 if (i > 0 && str[i] == ' ' && str[i - 1] != ' ')
 {
-lag = 0;
+flag = 0;
 len++;
 }
 i++;
