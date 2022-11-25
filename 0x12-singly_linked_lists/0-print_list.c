@@ -1,15 +1,18 @@
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 #include "lists.h"
-/**
-* print_list - function that prints all the elements of a list_t list.
-* @h: Parameter with the list
-* Return: the number of nodes
-*/
 
+/**
+ * print_list - check the code for Holberton School students.
+ * @h: name of the list
+ * Return: the number of nodes.
+ */
 size_t print_list(const list_t *h)
 {
-	size_t i;
+	int count = 0;
 
-	for (i = 0; h != NULL; i++)
+	while (h)
 	{
 		if (h->str == NULL)
 		{
@@ -17,9 +20,10 @@ size_t print_list(const list_t *h)
 		}
 		else
 		{
-			printf("[%u] %s\n", h->len, h->str);
+		printf("[%d] %s\n", h->len, h->str);
 		}
+		count++;
 		h = h->next;
 	}
-	return (i);
+	return (count);
 }
