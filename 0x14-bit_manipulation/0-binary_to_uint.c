@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
 
 * _pow - function that return the value of x raised to the power of y
